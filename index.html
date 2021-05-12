@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+    <title>Health</title>
+    <meta name="description" content="Health" />
+    <meta name="keywords" content="Health">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/slick.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header class="washim-header">
+        <div class="container">
+            <div class="left-header">
+                <p><i class="fa fa-home" aria-hidden="true"></i> Home</p>
+            </div>
+            <div class="right-header">
+                <p> Next <i class="fa fa-arrow-right" aria-hidden="true"></i></p>
+            </div>
+        </div>
+    </header>
+    <section class="registration">
+      <div class="container">
+        <h1>Registration</h1>
+        <small class="timer">Time left = <span id="time" style="text-align: center;"></span></small>
+      </div>
+    </section>
+    <section class="component_form">
+        <div class="container">
+            <div class="row col-lg-2"></div>
+            <div class="row col-lg-9 justify-content-center align-items-center">
+            <form autocomplete="off" class="form" role="form">
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Name:</label>
+                <div class="col-lg-6">
+                  <input class="form-control" type="text" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Email:</label>
+                <div class="col-lg-6">
+                  <input class="form-control" type="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Date Of Birth:</label>
+                <div class="col-lg-6">
+                  <input class="form-control" type="date">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">About Yourself:</label>
+                <div class="col-lg-6">
+                  <textarea class="form-control" cols="30" rows="10" placeholder="About Yourself.."></textarea>
+                </div>
+              </div>
+              <div class="g-recaptcha" data-sitekey="6LdZetAaAAAAAOC4dffbLbk8f4wHLXmBbxz-jDVH"></div><br>
+              <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label"></label>
+                <div class="col-lg-6">
+                  <input class="btn btn-secondary" type="reset" value="Cancel"> 
+                  <input class="btn btn-primary" type="button" value="Submit">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="row col-lg-1"></div>
+          </div>
+        </div>
+          </div>
+    </section>
+
+    
+
+    <script src=" js/jquery.js "></script>
+    <script src=" js/slick.js " type=" text/javascript " charset=" utf-8 "></script>
+    <script src=" js/jquery.counterup.min.js "></script>
+    <script src=" js/wow.min.js "></script>
+    <script src=" js/my_script.js "></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+      function startTimer(duration, display) {
+          var timer = duration, minutes, seconds;
+          setInterval(function () {
+              minutes = parseInt(timer / 60, 10)
+              seconds = parseInt(timer % 60, 10);
+              minutes = minutes < 10 ? "0" + minutes : minutes;
+              seconds = seconds < 10 ? "0" + seconds : seconds;
+              display.textContent = minutes + ":" + seconds;
+              if (--timer < 0) {
+                  timer = duration;
+              }
+          }, 1000);
+      }
+      window.onload = function () {
+          var threeMinutes = 60 * 3,
+              display = document.querySelector('#time');
+          startTimer(threeMinutes, display);
+      };
+    </script>
+</body>
+
+</html>

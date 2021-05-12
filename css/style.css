@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i,800,800i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Engagement&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ :root {
+    --prime: #f9585e;
+    --secon: #f0ab00;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1170px;
+    margin: auto;
+}
+
+.btn {
+    background: #1cbb9f;
+    display: table;
+    float: left;
+    width: 148px;
+    height: 47px;
+    line-height: 47px;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background: #f1f1f1;
+    transition: 0.4s;
+}
+
+.btn.more {
+    border-radius: 4px;
+    height: 35px;
+    line-height: 35px;
+    margin: auto;
+    float: none;
+}
+
+/* header {
+    width: 100%;
+    float: left;
+    background: #fff;
+    border-bottom: 3px solid #e5e5e5;
+}
+
+header .top-bar {
+    float: right;
+    width: 70%;
+    padding: 10px 10px;
+    background: #1cbb9f;
+}
+
+header .top-bar ul {
+    float: right;
+}
+
+header .top-bar ul li {
+    display: inline-block;
+    padding: 1px 12px;
+}
+
+header .top-bar ul li a {
+    color: #fff;
+    border-right: 1px solid #fff;
+    padding-right: 20px;
+}
+
+header .top-bar ul li:last-child a {
+    border: none;
+}
+*/
+.fixed {
+    background: white;
+    top: 0;
+    z-index: 10;
+    position: fixed;
+    border-bottom: 3px solid #e5e5e5;
+    animation: example .5s;
+}
+
+.fixed .top-bar {
+    padding: 5px;
+} 
+
+.washim-header{
+    width: 100%;
+    float: left;
+    background-color: #f5f6f7;
+}
+
+.washim-header .left-header {
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.washim-header .left-header p{
+    margin: 20px 80px;
+}
+
+.washim-header .left-header p i{
+    margin-right: 7px;
+}
+
+.washim-header .right-header {
+    width: 50%;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.washim-header .right-header p {
+    margin: 20px 80px;
+}
+
+.washim-header .right-header p i {
+    margin-right: 7px;
+}
+
+
+/***************form-section-start******************/
+.registration {
+    width: 100%;
+    float: left;
+    padding: 50px 0;
+}
+
+.registration h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #000000;
+    font-weight: 900;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+
+.component_form form {
+    background-color: #4d4e4e;
+    padding: 30px;
+} 
+
+.registration .timer {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.component_form form label {
+    color: #f1f1f1;
+}
+
+.component_form form input[type="date"].form-control {
+    line-height: 22px;
+    margin-right: 6px;
+}
+
+.component_form form .g-recaptcha {
+    margin-left: 198px;
+}
+
+
+
+/***************form-section-end******************/
+
+
+/* Standard syntax */
+
+@keyframes example {
+    from {
+        top: -300px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+.fixed nav ul.nav-ul>li>a {
+    color: black;
+}
+
+.fixed .social-icons ul li a {
+    background: #ccc;
+}
+
+.fixed .social-icons ul li a:hover {
+    background: #32afed;
+}
+
+.fixed .logo img {
+    width: 200px;
+}
+
+.fixed .logo {
+    height: 100px;
+}
+
+.fixed nav ul.nav-ul>li:hover a {
+    color: #434343;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    width: 17%;
+    height: 120px;
+    z-index: 0;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    transform: skewX(-25deg);
+    height: 100%;
+    right: -100px;
+    width: 1000%;
+    border-right: 3px solid #1cbb9f;
+    z-index: -1;
+    background: #fff;
+}
+
+.logo img {
+    width: 220px;
+    padding-top: 30px;
+}
+
+nav {
+    float: right;
+}
+
+nav ul.nav-ul {
+    margin-left: 50px;
+    float: right;
+}
+
+nav ul.nav-ul>li {
+    float: left;
+    list-style: none;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+nav ul.nav-ul li i {
+    font-size: 12px;
+    color: #b3b1b1;
+}
+
+nav ul.nav-ul li a {
+    color: #000;
+    width: 100%;
+    float: left;
+}
+
+nav ul.nav-ul li a:hover {
+    color: white;
+}
+
+nav ul.nav-ul>li>a {
+    text-decoration: none;
+    width: 100%;
+    float: left;
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    padding: 6px 0;
+}
+
+nav ul.nav-ul>li>input {
+    background: #f1f1f1;
+    padding: 6px 3px;
+    border: 1px solid #ccc;
+}
+
+nav ul.nav-ul li i.fa-search {
+    background: #4d4e4e;
+    padding: 9px;
+    margin-left: -4px;
+}
+
+nav ul.nav-ul>li>a:hover {
+    color: white;
+}
+
+nav ul.nav-ul>li.active a,
+nav ul.nav-ul>li:hover>a {
+    text-decoration: none;
+    outline: none;
+    color: var(--secon);
+}
+
+nav ul.nav-ul ul {
+    top: 100%;
+    width: 200px;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    background: white;
+    left: 10px;
+    transition: all ease .5s;
+    color: #333;
+    z-index: 2;
+    display: none;
+}
+
+nav ul.nav-ul>li:hover>ul {
+    border-top: 2px solid var(--secon);
+    display: block;
+    transition: all ease 1s;
+}
+
+nav ul.nav-ul ul li {
+    padding: 10px 6px;
+    float: left;
+    width: 100%;
+    font-weight: 400;
+    color: #333;
+    transition: all ease .25s;
+    border-bottom: 1px dotted var(--secon);
+    font-size: 14px;
+}
+
+nav ul.nav-ul ul li i {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 14px;
+}
+
+nav ul.nav-ul ul li:last-child a {
+    border: none;
+}
+
+nav ul.nav-ul ul ul {
+    top: -2px;
+    width: 200px;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    background: white;
+    left: 100%;
+    transition: all ease .5s;
+    color: #333;
+    z-index: 1;
+    display: none;
+    border: 1px solid #3f444a;
+}
+
+nav ul.nav-ul ul>li:hover ul {
+    border-top: 2px solid #333;
+    display: block;
+    transition: all ease 1s;
+}
+
+.fixed nav ul.nav-ul ul {
+    top: 48px;
+    width: 200px;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    background: #fff;
+    left: 10px;
+    transition: all ease .5s;
+    color: white;
+}
+
+.fixed nav ul.nav-ul ul ul {
+    top: 0;
+    width: 200px;
+    text-align: left;
+    list-style: none;
+    position: absolute;
+    background: #fff;
+    left: 100%;
+    transition: all ease .5s;
+    color: white;
+}
+
+nav ul.nav-ul ul li:hover {
+    background: black;
+}
+
+nav ul.nav-ul ul li:hover {
+    background: var(--prime);
+    color: white;
+}
+
+.fixed nav ul.nav-ul ul li a:hover {
+    color: white;
+}
+
+.logo-mob {
+    display: none;
+}
+
+.mob-nav-btn {
+    display: none;
+}
+
+
+/*****************************************banner************************************/
+
+.banner {
+    width: 100%;
+    float: left;
+    position: relative;
+}
+
+.banner .text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.banner .text span {
+    background: #fff;
+    margin-left: 12px;
+    margin-right: 4px;
+    padding: 9px 21px;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #1cbb9f;
+}
+
+.banner .text .right {
+    background: #1cbb9f;
+    color: #fff;
+}
+
+.banner .text h1 {
+    font-size: 50px;
+    margin: 30px 0 15px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.banner .text p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+.banner .text .btn.rgt {
+    color: #1cbb9f;
+    margin: 0;
+    background: #fff;
+    box-shadow: 0 3px 9px #b5b2b2;
+}
+
+.banner .text a {
+    text-transform: uppercase;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+
+/*********************************specialist***********************************/
+
+.specialist {
+    width: 100%;
+    float: left;
+}
+
+.specialist .specialist-inner li {
+    text-align: center;
+    width: 14.285%;
+    float: left;
+    border: 1px solid #1cbb9f;
+    margin-top: -4px;
+    padding: 25px 0;
+}
+
+.specialist .specialist-inner figure {
+    height: 70px;
+}
+
+.specialist .specialist-inner img {
+    width: 70px;
+}
+
+.specialist .specialist-inner li p {
+    padding: 15px 0 0;
+}
+
+
+/*********************************about***********************************/
+
+.about-us {
+    width: 100%;
+    float: left;
+    background: url('../images/bg.jpg');
+    padding: 100px 0;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.about-us h2 span {
+    color: #2d98e6;
+}
+
+.about-us .first-para {
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 90px;
+}
+
+.about-us .counter-health {
+    margin-top: 30px;
+}
+
+.about-us .counter-health li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    border-right: 1px solid #2d98e6;
+}
+
+.about-us .counter-health li i {
+    font-size: 40px;
+}
+
+.about-us .counter-health .counter {
+    display: table;
+    margin: 10px auto;
+    font-size: 36px;
+}
+
+.counter-health .count p {
+    color: #2d98e6;
+    margin-top: 12px;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+
+/********************************************doctors************************************************/
+
+.our-doctors {
+    width: 100%;
+    float: left;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.our-doctors h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.our-doctors p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.our-doctors .slider {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.our-doctors .slick-slide,
+.our-doctors .slick-active {
+    opacity: 1;
+}
+
+.our-doctors .fa-angle-left,
+.our-doctors .fa-angle-right {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background: #fff;
+    transform: translateY(-50%);
+    padding: 15px;
+    font-size: 30px;
+    background: rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+.our-doctors .fa-angle-left {
+    left: 0;
+}
+
+.our-doctors .fa-angle-right,
+.our-doctors .fa-angle-left {
+    opacity: 0;
+}
+
+.our-doctors .fa-angle-right {
+    right: 0;
+}
+
+.our-doctors .center {
+    cursor: pointer;
+}
+
+.our-doctors .center:hover i {
+    opacity: 1;
+    transition: 0.9s;
+}
+
+.our-doctors i.fa-stethoscope {
+    background: gray;
+    border-radius: 50%;
+    font-size: 33px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin-top: -20px;
+    color: #fff;
+}
+
+.our-doctors h4 {
+    position: relative;
+    margin-bottom: 50px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.our-doctors h4::before {
+    position: absolute;
+    bottom: -25px;
+    content: '';
+    width: 50px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1cbb9f;
+}
+
+.our-doctors .slick-slide p {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.our-doctors-inner {
+    background: #f1f1f1;
+    padding-bottom: 21px;
+}
+/********************************************End************************************************/
+
+/********************************************New project start************************************************/
+
+/*************************top-bar***************************/
+
+.top-bar{
+    width: 100%;
+    float: left;
+    background: #000;
+}
+
+.top-bar small{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/***********************************************************/
+
